@@ -23,7 +23,7 @@ foo(); //true
 
 　　a、使用bind函数改变外层函数的作用域，然后在内层直接调用，其this指向依然是全局变量：
 
-```
+```js
 function foo() {
     console.log(this === global);
 }
@@ -47,6 +47,16 @@ var obj = {
 var f = obj.foo;
 f();
 ```
+
+#### 注意: 在nodesjs中，全局环境下调用this时，其指向的并不是global，而是module.exports，如：
+```js
+console.log(this); //{}
+this.num = 10;
+console.log(this.num); //10
+console.log(global.num); //undefined
+console.log(module.exports.num); //10
+```
+
 ### 方法调用：
 
 　　方法调用是指通过对象来调用其方法函数，类似于obj.foo(..)的调用方式。此时，this指向调用该方法的对象，注意，是最终调用该方法的对象。
