@@ -2,6 +2,7 @@
 title: 轻松搞定javascript中this指向
 date: 2018-10-15 10:45:18
 tags: javascript
+categories: 前端
 ---
 
 　　关于javascript中this指向的问题，现总结如下，如有不正确，欢迎指正。

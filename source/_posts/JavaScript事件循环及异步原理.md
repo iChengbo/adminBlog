@@ -1,7 +1,8 @@
 ---
 title: JavaScript事件循环及异步原理
 date: 2018-10-16 16:01:34
-tags: JavaScript，事件循环，异步原理
+tags: [JavaScript,事件循环]
+categories: 前端
 ---
 
 ## JS的语言特点：
@@ -35,7 +36,7 @@ tags: JavaScript，事件循环，异步原理
 &nbsp;&nbsp; 所以，当在执行过程中遇到一些类似于 `setTimeout` 等异步操作的时候，会交给浏览器的其他模块(以webkit为例，是webcore模块)进行处理，当到达 `setTimeout` 指定的延时执行的时间之后，回调函数会放入到任务队列之中。一般不同的异步任务的回调函数会放入不同的任务队列之中。等到调用栈中所有任务执行完毕之后，接着去执行任务队列之中的回调函数。
 > 用Philip Roberts的演讲《Help, I’m stuck in an event-loop》之中的一张图表示就是
 
-![事件循环栈](../img/事件循环栈.png)
+![事件循环栈](/事件循环栈.png)
 
 在上图中，调用栈中遇到`DOM操作`、`ajax请求`以及`setTimeout`等WebAPIs的时候就会交给浏览器内核的其他模块进行处理，webkit内核在Javasctipt执行引擎之外，有一个重要的模块是webcore模块。对于图中WebAPIs提到的三种API，`webcore`分别提供了`DOM Binding`、`network`、`timer`模块来处理底层实现。等到这些模块处理完这些操作的时候将回调函数放入任务队列中，之后等栈中的`task`执行完之后再去执行任务队列之中的回调函数。
 

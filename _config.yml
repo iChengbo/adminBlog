@@ -5,10 +5,10 @@
 # Site
 title: Chengbo的博客
 subtitle:
-description:
+description: 前端,javascript,面试
 keywords:
 author: XIE Chengbo
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -73,14 +73,22 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-archer
-# #RSS订阅 
-# plugin: hexo-generator-feed 
+theme: hexo-theme-next
+#RSS订阅 
+plugin: hexo-generator-feed 
 # #Feed Atom 
-# feed: 
-# type: atom 
-# path: atom.xml 
-# limit: 20
+feed: 
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# 字数统计
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

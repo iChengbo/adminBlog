@@ -2,6 +2,7 @@
 title: bind、call、apply的区别与实现原理
 date: 2018-10-15 11:13:57
 tags: javascript
+categories: 前端
 ---
 
 ## 1、简单说一下bind、call、apply的区别
