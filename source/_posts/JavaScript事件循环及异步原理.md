@@ -1,7 +1,7 @@
 ---
 title: JavaScript事件循环及异步原理
-date: 2018-10-16 16:01:34
-tags: [JavaScript,事件循环]
+date: 2018-10-17 16:01:34
+tags: [javascript,事件循环]
 categories: 前端
 ---
 
