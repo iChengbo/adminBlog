@@ -14,7 +14,9 @@ categories: 前端
 
 >  `client`为前端项目，`server`为服务端项目
 
-# #前端
+
+## 前端
+---
 
  1. 使用**vue-cli**`2.9.6`,前端主要有`vue+axios`构建
  2. 实现的功能
@@ -49,7 +51,8 @@ categories: 前端
        ....
        ```
 
-# #后端
+## 后端
+---
 1.后台由`express + mongoodb`构建。
 
 2.路由
